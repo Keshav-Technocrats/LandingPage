@@ -1,0 +1,58 @@
+import Interactions from "./Interactions";
+
+const B = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+export default function Home() {
+  return (
+    <>
+<a className="skip" href="#top">Skip to content</a>
+<header className="nav"><div className="wrap"><a className="brand" href="#top"><img src={`${B}/logo-160.webp`} width="38" height="38" decoding="async" alt="Keshav Technocrats logo"/>Keshav Technocrats</a>
+<nav className="links" id="links" aria-label="Main"><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#why">Why us</a><a href="#faq">FAQ</a></nav>
+<button className="ib" id="themeBtn" aria-label="Switch light or dark theme">◐</button><a className="btn" href="#contact">Get a quote</a><button className="ib" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button></div></header>
+<main id="top">
+<section className="hero"><div className="wrap"><div>
+<span className="pill"><i></i>Now booking new projects</span>
+<h1>Mobile apps that <span className="grad">launch smarter and grow faster.</span></h1>
+<p className="lead">We design and build Android and iOS apps, AI features and cloud backends, then help you grow them with clear IT guidance.</p>
+<div className="cta"><a className="btn" href="#contact">Start your project</a><a className="btn ghost" href="#services">Explore services</a></div>
+<div className="trust"><span>✓ Android &amp; iOS</span><span>✓ AI-ready</span><span>✓ Weekly demos</span><span>✓ Live app: Daily Reader</span></div></div>
+<div className="showcase" role="img" aria-label="Daily Reader app screens: highlighting, library and sticky notes"><img className="f1" src={`${B}/work/dr-highlight.webp`} width="400" height="711" alt="" decoding="async"/><img className="f3" src={`${B}/work/dr-notes.webp`} width="400" height="711" alt="" decoding="async"/><img className="f2" src={`${B}/work/dr-lib.webp`} width="400" height="711" alt="" fetchPriority="high"/></div></div></section>
+<section className="tech" aria-label="Technologies"><div className="wrap"><h2 className="sr">Technologies we work with</h2><span>Flutter</span><span>React Native</span><span>Kotlin</span><span>Swift</span><span>Next.js</span><span>Node.js</span><span>AWS</span><span>Firebase</span><span>OpenAI</span></div></section>
+<section className="sec" id="services"><div className="wrap"><div className="head"><h2>Everything you need to ship and scale</h2><p>One team for product, apps, intelligence and infrastructure.</p></div>
+<div className="bento">
+<div className="card feat s4"><div className="ic">📱</div><h3>Mobile app development</h3><p>Fast, accessible apps designed around how your customers use their phones, from first prototype to store release.</p><div className="tags"><span>UX research</span><span>UI design</span><span>QA</span><span>Store launch</span></div></div>
+<div className="card s2"><div className="ic">🤖</div><h3>Android &amp; iOS</h3><p>Native or cross-platform, one consistent experience.</p></div>
+<div className="card s2"><div className="ic">🧠</div><h3>AI-powered solutions</h3><p>Chatbots, smart search and automation that save hours.</p></div>
+<div className="card s2"><div className="ic">☁️</div><h3>Cloud &amp; backend</h3><p>Secure APIs and databases that scale with demand.</p></div>
+<div className="card s2"><div className="ic">📈</div><h3>IT consulting &amp; growth</h3><p>Roadmaps, audits and analytics that guide decisions.</p></div>
+</div></div></section>
+<section className="sec" id="work"><div className="wrap"><div className="head"><h2>Selected work</h2><p>Products we have designed, built and shipped.</p></div>
+<article className="case"><img className="banner" src={`${B}/work/dr-banner.webp`} width="900" height="439" loading="lazy" decoding="async" alt="Daily Reader: read deeply every day, 100% offline, no trackers, 3 languages"/>
+<div className="case-body"><span className="pill"><i></i>Live on Google Play</span><h3>Daily Reader</h3>
+<p className="lead">A calm, distraction-free PDF reader for people who want to read more. Highlight what matters, pin notes where ideas strike and build a daily reading habit.</p>
+<ul className="ticks"><li>Line, box and square highlights in many colors, with undo and redo</li><li>Sticky notes pinned to any page, reviewed in My Notes</li><li>Daily reminder and a saved stopping point for every book</li><li>Light, Sepia and Dark reading themes</li><li>English, Hindi and Gujarati</li><li>Works fully offline with no trackers or analytics</li></ul>
+<div className="tags"><span>Android</span><span>PDF</span><span>Offline-first</span><span>Multilingual</span><span>Privacy-first</span></div>
+<div className="cta"><a className="btn" href="https://play.google.com/store/search?q=Daily%20Reader%20Keshav%20Technocrats&amp;c=apps" target="_blank" rel="noopener noreferrer">Get it on Google Play</a></div></div></article>
+<div className="gal" tabIndex={0} role="region" aria-label="Daily Reader screenshots"><figure><img src={`${B}/work/dr-highlight.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader highlight tools with line, box and square modes and a color palette"/><figcaption>Highlight what matters</figcaption></figure><figure><img src={`${B}/work/dr-habit.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader showing todays reading completed and the saved stopping point"/><figcaption>Build a reading habit</figcaption></figure><figure><img src={`${B}/work/dr-themes.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader in Light, Sepia and Dark themes"/><figcaption>Light, Sepia or Dark</figcaption></figure><figure><img src={`${B}/work/dr-privacy.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader settings with daily reminder, theme and language options"/><figcaption>100% private</figcaption></figure><figure><img src={`${B}/work/dr-lib.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader library with a daily quote, highlights, notes and history"/><figcaption>Your PDF library</figcaption></figure><figure><img src={`${B}/work/dr-notes.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader sticky note pinned to a page"/><figcaption>Pin notes</figcaption></figure><figure><img src={`${B}/work/dr-promo.webp`} width="400" height="711" loading="lazy" decoding="async" alt="Daily Reader is free on Google Play"/><figcaption>Out now</figcaption></figure></div></div></section>
+<section className="sec" id="process"><div className="wrap"><div className="head"><h2>From idea to launch in four steps</h2><p>Each step ends with something you can see and approve.</p></div>
+<div className="flow"><div className="step"><h3>Discover</h3><p>Goals, users and scope, agreed in a short workshop.</p></div><div className="step"><h3>Design</h3><p>Clickable prototypes before any code is written.</p></div><div className="step"><h3>Build</h3><p>Weekly demos of real, working software.</p></div><div className="step"><h3>Launch &amp; grow</h3><p>Store release, monitoring and steady improvements.</p></div></div></div></section>
+<section className="sec" id="engage"><div className="wrap"><div className="head"><h2>Work with us your way</h2><p>Pick the model that fits your stage and budget.</p></div><div className="grid3"><div className="card"><div className="ic">📦</div><h3>Fixed-scope build</h3><p>A defined app or feature with a clear scope, timeline and price.</p></div><div className="card"><div className="ic">👥</div><h3>Dedicated team</h3><p>Designers and engineers working as an extension of your team.</p></div><div className="card"><div className="ic">🧭</div><h3>Consulting and audits</h3><p>Architecture reviews, security checks and growth roadmaps.</p></div></div></div></section>
+<section className="sec" id="why"><div className="wrap why"><div className="head"><h2>A technology partner, not just a vendor</h2><p>Small senior teams, honest timelines and full visibility. You own the code and the roadmap.</p></div>
+<div className="faq" id="faq"><details open><summary>How long does an app take?</summary><p>Most first versions ship in 8 to 16 weeks, depending on scope. You get a timeline after discovery.</p></details>
+<details><summary>Do you build for both Android and iOS?</summary><p>Yes. We choose native or cross-platform based on your budget and performance needs.</p></details>
+<details><summary>Can you add AI to an existing app?</summary><p>Yes. We can add assistants, search or automation without rebuilding your product.</p></details>
+<details><summary>Do you support apps after launch?</summary><p>Yes. We offer monitoring, updates and growth work on a monthly plan.</p></details></div></div></section>
+<section className="sec" id="contact"><div className="wrap"><div className="contact"><div><h2>Tell us what you want to build</h2><p>Share a few details and we will reply with next steps and an estimate.</p></div>
+<form id="lead"><div className="hp" aria-hidden="true"><label>Website<input name="website" tabIndex={-1} autoComplete="off"/></label></div><label>Name<input name="name" autoComplete="name" minLength={2} maxLength={80} required/></label><label>Email<input name="email" type="email" autoComplete="email" maxLength={120} required/></label><label>Service<select name="service"><option>Mobile app development</option><option>AI-powered solution</option><option>Cloud &amp; backend</option><option>IT consulting</option></select></label><label>Project details<textarea name="message" rows={4} minLength={10} maxLength={2000} required></textarea></label><button className="btn" type="submit" id="send">Send enquiry</button><div id="ok" role="status" aria-live="polite"></div></form></div></div></section>
+</main>
+<footer><div className="wrap fgrid"><div><a className="brand" href="#top"><img src={`${B}/logo-160.webp`} width="38" height="38" decoding="async" alt="Keshav Technocrats logo"/>Keshav Technocrats</a><p>Mobile app development and IT consulting. Launch smarter. Grow faster.</p>
+<div className="social"><a href="https://www.linkedin.com/company/keshav-technocrats" target="_blank" rel="noopener noreferrer me" aria-label="Keshav Technocrats on LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" strokeWidth="2"/><path d="M8 11v6M8 7.5v.01M12 17v-6m0 2.5c0-1.4 1-2.5 2.3-2.5S16.5 12 16.5 13.5V17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></a><a href="https://www.instagram.com/keshavtechnocrats" target="_blank" rel="noopener noreferrer me" aria-label="Keshav Technocrats on Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a></div></div>
+<nav aria-label="Company"><b>Company</b><a href="#work">Work</a><a href="#process">Process</a><a href="#why">Why us</a><a href="#faq">FAQ</a></nav>
+<nav aria-label="Services"><b>Services</b><a href="#services">Mobile apps</a><a href="#services">AI solutions</a><a href="#services">Cloud &amp; backend</a><a href="#services">IT consulting</a></nav>
+<div><b>Contact</b><address><a href="mailto:keshavtechnocrats@gmail.com">keshavtechnocrats@gmail.com</a></address></div></div>
+<div className="wrap legal"><small>© 2026 Keshav Technocrats. All rights reserved.</small></div></footer>
+
+<Interactions />
+    </>
+  );
+}
