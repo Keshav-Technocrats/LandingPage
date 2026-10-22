@@ -49,7 +49,7 @@ export default function Home() {
 <div className="social"><a href="https://www.linkedin.com/company/keshav-technocrats" target="_blank" rel="noopener noreferrer me" aria-label="Keshav Technocrats on LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" strokeWidth="2"/><path d="M8 11v6M8 7.5v.01M12 17v-6m0 2.5c0-1.4 1-2.5 2.3-2.5S16.5 12 16.5 13.5V17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></a><a href="https://www.instagram.com/keshavtechnocrats" target="_blank" rel="noopener noreferrer me" aria-label="Keshav Technocrats on Instagram"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a></div></div>
 <nav aria-label="Company"><b>Company</b><a href="#work">Work</a><a href="#process">Process</a><a href="#why">Why us</a><a href="#faq">FAQ</a></nav>
 <nav aria-label="Services"><b>Services</b><a href="#services">Mobile apps</a><a href="#services">AI solutions</a><a href="#services">Cloud &amp; backend</a><a href="#services">IT consulting</a></nav>
-<div><b>Contact</b><address><a href="mailto:hello@keshavtechnocrats.com">hello@keshavtechnocrats.com</a></address></div></div>
+<div><b>Contact</b><address><a href="mailto:keshavtechnocrats@gmail.com">keshavtechnocrats@gmail.com</a></address></div></div>
 <div className="wrap legal"><small>© 2026 Keshav Technocrats. All rights reserved.</small></div></footer>
 
 <Interactions />
